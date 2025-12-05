@@ -13,7 +13,7 @@ jobs:
 
     - name: Generate file list
       run: |
-        ls -1 | grep -v '^file_list\.txt$' | paste -sd '!NEW!' - > file_list.txt
+        ls -1 | grep -v '^file_list\.txt$' | paste -sd '~' - > file_list.txt
 
 
     - name: Commit changes
